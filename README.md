@@ -1,9 +1,3 @@
-<p align="center">
-  <a href="https://at.aotu.io/">
-    <img width="200" src="https://github.com/VV-UI/VV-UI/blob/master/examples/assets/img/logo.png">
-  </a>
-</p>
-
 # 公告
 这个一个基于 `VUE`的 `UI`组件库，和其他市面上常见的组件库有所不同，除了提供一些必要的页面组件，这里还提供一些GIS相关的组件，如底图切换、数据目录、图例等组件。
 
