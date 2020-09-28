@@ -1,6 +1,4 @@
-/**
- * 转换成DOM字符串
- */
+//转换成DOM字符串
 const cheerio = require('cheerio')
 
 module.exports = (str, tags) => {
