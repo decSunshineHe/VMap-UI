@@ -10,7 +10,7 @@
         <a
           target="_blank"
           class="btn-github"
-          href="https://github.com/VV-UI/VV-UI"
+          href="https://github.com/decSunshineHe/VMap-UI"
           >GitHub</a
         >
       </div>
@@ -21,8 +21,7 @@
 <script>
 export default {
   data() {
-    return {
-    };
+    return {};
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <button
     @click="$emit('click')"
-    class="w__button"
+    class="m__button"
     :disabled="disabled"
     :class="[
     'm__button--'+type,

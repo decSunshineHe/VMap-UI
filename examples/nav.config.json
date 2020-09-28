@@ -47,6 +47,10 @@
                 "desc": "LoadingBar 加载进度条",
                 "name": "loading-bar",
                 "path": "/loadingBar"
+            }, {
+                "desc": "MapSwitch 底图切换",
+                "name": "map-switch",
+                "path": "/mapswitch"
             }]
         }
     ]

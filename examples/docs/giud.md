@@ -2,7 +2,7 @@
 
 ----
 
-`VV-UI` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
+`VMap-UI` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发WebGIS相关 PC 网站。
 
 ## 特性
 
@@ -19,4 +19,4 @@
 
 ## 贡献
 
-如果你在使用 `VV-UI` 时遇到问题，或者有好的建议，欢迎给我们提 [Issue](https://github.com/VV-UI/VV-UI/issues) 或 [Pull Request](https://github.com/VV-UI/VV-UI/pulls)
+如果你在使用 `VMap-UI` 时遇到问题，或者有好的建议，欢迎给我们提 [Issue](https://github.com/decSunshineHe/VMap-UI/issues) 或 [Pull Request](https://github.com/decSunshineHe/VMap-UI/pulls)
