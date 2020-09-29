@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="m__map-switch"
-    @mouseover="mouseoverChange"
-    @mouseout="mouseoutChange"
-  >
+  <div class="m__map-switch">
     <div class="m__map-switch--item" v-for="(item, index) in data" :key="index">
       <div
         class="m__map-switch--spinner"
@@ -33,7 +29,7 @@ export default {
   },
   data() {
     return {
-      isHover: false,
+      isHover: true,
     };
   },
   computed: {},
