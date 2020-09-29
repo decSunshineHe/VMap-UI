@@ -1,20 +1,18 @@
 <template>
-  <div class="m__map-switch">
-    <div
-      v-if="value === '0'"
-      class="m__map-switch--earth m__map-switch--spinner"
-      :class=" { 'is-active': value === '0' }"
-      @click="handleClick(0)"
-    >
-      <div class="map-item-text">影像</div>
-    </div>
-    <div
-      v-if="value === '1'"
-      class="m__map-switch--normal m__map-switch--spinner"
-      :class=" { 'is-active': value === '1' }"
-      @click="handleClick(1)"
-    >
-      <div class="map-item-text">地图</div>
+  <div
+    class="m__map-switch"
+    @mouseover="mouseoverChange"
+    @mouseout="mouseoutChange"
+  >
+    <div class="m__map-switch--item" v-for="(item, index) in data" :key="index">
+      <div
+        class="m__map-switch--spinner"
+        v-if="isHover || value == index"
+        @click="handleClick(item)"
+      >
+        <img :src="item.img" />
+        <div class="map-item-text">{{ item.label }}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -27,14 +25,27 @@ export default {
       type: String,
       default: "0",
     },
+    data: {
+      type: Array,
+      default: [],
+      required: true,
+    },
   },
   data() {
-    return {};
+    return {
+      isHover: false,
+    };
   },
   computed: {},
   methods: {
     handleClick(evt) {
       this.$emit("click", evt);
+    },
+    mouseoverChange() {
+      this.isHover = true;
+    },
+    mouseoutChange() {
+      this.isHover = false;
     },
   },
 };

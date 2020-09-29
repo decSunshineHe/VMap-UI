@@ -1,20 +1,45 @@
 # MapSwitch 底图切换
 ----
 ### 基础用法
-使用```type```、```plain```和```round```属性来定义 Button 的样式。
+使用```data```、```value```属性来定义 MapSwitch 的数据和选择项。
 
 <div class="demo-block">
   <div>
-    <m-mapswitch></m-mapswitch>
+    <m-mapswitch :data="data"></m-mapswitch>
   </div>
 </div>
+
+<script>
+  export default {
+    data() {
+      return {
+        data:  [
+        { label: "影像", img: require('../assets/img/map-elec.png') },
+        { label: "地图", img: require('../assets/img/map-image.png')},
+        { label: "三维", img: require('../assets/img/map-three.png') }],
+      }
+    }
+  }
+</script>
 
 ::: demo
 ```html
 
 <div>
-   <m-mapswitch></m-mapswitch>
+   <m-mapswitch :data="data"></m-mapswitch>
 </div>
+<script>
+  export default {
+    data() {
+      return {
+        data:  [
+        { label: "影像", img: "" },
+        { label: "地图", img: "" },
+        { label: "三维", img: "" }],
+      }
+    }
+  }
+</script>
 
 ```
 :::

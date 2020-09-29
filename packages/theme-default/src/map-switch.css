@@ -7,40 +7,33 @@
         transition-property: width, background-color;
         -webkit-transition-duration: 0.4s;
         transition-duration: 0.4s;
-        width: 110px;
         background-color: rgba(255, 255, 255, 0);
+        @m item {
+            display: inline-block;
+        }
         @m spinner {
-            height: 58px;
+            height: 56px;
             width: 92px;
-            position: absolute;
-            bottom: 10px;
+            background-color: #99a9bf;
+            margin-right: 10px;
             border: 1px solid transparent;
             -webkit-transition-property: right, background-image;
             transition-property: right, background-image;
             -webkit-transition-duration: 0.4s;
             transition-duration: 0.4s;
+            position: relative;
             .map-item-text {
                 position: absolute;
-                right: 0;
-                bottom: 0;
                 padding: 0 5px;
                 color: #fff;
+                bottom: 0;
+                right: 0;
             }
         }
-        @m earth {
-            right: 10px;
-            background-color: rgba(255, 0, 0, 0.4);
-            border-radius: 3px;
-            .is-active {
-                background-color: rgba(255, 0, 0, 0.6);
-            }
-        }
-        @m normal {
-            right: 10px;
-            background-position: 0 0;
-            border-radius: 3px;
-            .is-active {
-                background-color: rgba(0, 255, 0, 0.6);
+        @m spinner:hover {
+            border: 1px solid #1b8fe8;
+            .map-item-text {
+                background-color: #1b8fe8;
             }
         }
     }
