@@ -1,0 +1,5 @@
+{
+    "button": "./packages/button/index.js",
+    "loading-bar": "./packages/loading-bar/index.js",
+    "map-switch": "./packages/map-switch/index.js"
+}

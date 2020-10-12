@@ -15,7 +15,7 @@
 </template>
 <script>
   export default{
-    name: 'mButton',
+    name: 'm-button',
     props: {
       type: {
         type: String,

@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "mMapswitch",
+  name: "m-mapswitch",
   props: {
     value: {
       type: String,

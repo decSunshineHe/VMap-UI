@@ -1,0 +1,9 @@
+#忽略目录
+build/
+examples/
+dist/
+test/
+build/
+config/
+
+

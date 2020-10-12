@@ -1,16 +1,14 @@
-import mButton from './button/index.js';
-import mLoadingBar from './loading-bar/index.js'
-import mMapSwitch from './map-switch/index.js'
+import Button from './button/index.js';
+import MapSwitch from './map-switch/index.js'
 
 const components = [
-  mButton,
-  mMapSwitch
+  Button,
+  MapSwitch
 ]
 
 const install = function (Vue) {
   if (install.installed) return
   components.map(component => Vue.component(component.name, component))
-  Vue.prototype.$loading = mLoadingBar
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
@@ -19,7 +17,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  mButton,
-  mMapSwitch,
-  mLoadingBar,
+  Button,
+  MapSwitch
 }

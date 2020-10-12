@@ -52,7 +52,7 @@
     }
     i {
       display: block;
-      font-size: 32px;
+      font-size: 24px;
       margin-bottom: 15px;
       color: #3f536e;
     }
@@ -65,25 +65,25 @@
 # Icon 图标
 
 ----
-语义化的矢量图形，```VV-UI``` 使用开源的 Iconfont (阿里妈妈MUX倾力打造的矢量图标管理、交流平台) 作为图标库，并制作成了 ```icon font```。
+地图操作相关的矢量图形，```VMap-UI``` 使用DCI倾心设计的 Iconfont 作为图标库，并制作成了 ```icon font```。
 ### 如何使用
 
-使用 ```class="icon"``` 来声明图标，具体图标的名称请 ```copy``` 相应的标签
+使用 ```class="m-icon-xxx"``` 来声明图标，具体图标的名称请 ```copy``` 相应的标签
 
 <div class="demo-block">
-  <i class="w-icon-close fs-24"></i>
-  <i class="w-icon-link fs-24"></i>
-  <i class="w-icon-tag fs-24"></i>
-  <i class="w-icon-smile fs-24"></i>
+  <i class="m-icon-attribute"></i>
+  <i class="m-icon-delete"></i>
+  <i class="m-icon-position"></i>
+  <i class="m-icon-split"></i>
 </div>
 
 ::: demo
 ```html
 
-<i class="w-icon-close fs-24"></i>
-<i class="w-icon-link fs-24"></i>
-<i class="w-icon-tag fs-24"></i>
-<i class="w-icon-smile fs-24"></i>
+<i class="m-icon-attribute"></i>
+<i class="m-icon-delete"></i>
+<i class="m-icon-position"></i>
+<i class="m-icon-split"></i>
 
 ```
 :::
@@ -93,8 +93,8 @@
 <ul class="icon-list">
   <li v-for="name in icons" :key="name">
     <span>
-      <i :class="'w-' + name"></i>
-      {{'w-' + name}}
+      <i :class="'m-' + name"></i>
+      {{'m-' + name}}
     </span>
   </li>
 </ul>
